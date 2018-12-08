@@ -6,8 +6,7 @@
     "theme": "github",
     "layout": "blog",
     "css": "styles.css",
-    "authorView": false,
-    "homepage": "http://monikka.github.io/letsknowoursolarsystem"
+    "authorView": false
   },
   "dependencies": {
     "d3": "^4.0.0",
