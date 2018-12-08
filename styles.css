@@ -1,0 +1,16 @@
+
+.d3-component svg {
+  background: #f8b195;
+  max-height: 300px;
+}
+
+.rv-xy-plot__grid-lines__line {
+  stroke: gray;
+  stroke-width: 0.5;
+}
+
+@media all and (max-width: 1000px) {
+  .d3-component svg {
+    max-height: 1200px;
+  }
+}
