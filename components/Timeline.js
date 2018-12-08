@@ -306,7 +306,7 @@ export default class Timeline extends React.Component {
                ? FOCUSED_LINK_OPACITY
                : BLURRED_LINK_OPACITY
             }))}
-        width={1300}
+        width={800}
         height={1200}
         // do not use voronoi in combination with link mouse over
         hasVoronoi={false}

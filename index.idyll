@@ -2,60 +2,69 @@
 
 [Header
   title:"Our Solar System"
-  subtitle:"Welcome to Idyll. Open index.idyll to start writing"
-  author:"Your Name Here"
-  authorLink:"https://idyll-lang.org" /]
+  subtitle:"Facts, Figures & Comparisons!"
+  author:"Monikka Ravichandran"
+  authorLink:"http://monikka.github.io" /]
 
-This is an Idyll file. Write text
-as you please in here. To add interactivity,
-you can add  different components to the text.
+[section className:"article-body"]
+This project was motivated by my 5-year old niece, who likes to read a lot
+ (or make us read to her). Her recent obsession is a national geography kids book on "planets".
+ It wasn't until she questioned about th planets, that I realised how much we don't know about the solar system we live
+ in and her questioning on how we know the facts about planets led me to learn about the space missions carried out 
+ by various space agencies so far. When googling for a timeline of such events, I found out that most infographics
+ or images that exist are text-only, aren't readable, hard to understand and does not contain recent events.
+Even NASA doesn't have a decent timeline of its projects in their website.
 
+Space and its exploration is a curious topic for everyone. Our solar system is one of the first few things we learn at school.
+Still it is surprising how little of this basic information has been captured as kid-friendly visualizations.
+
+In this project, my aim is to build a webpage with interactive visualizations of data comparisons of all the planets
+in the solar system by various factors and creating a simple timeline of all the space exploratory missions carried out so far.
+
+**Main project goals:**
+1. Simple design
+2. Aesthetically pleasing
+
+[section]
 [data name:"planetsinfo" source:"PlanetaryData.csv"/]
+First, lets analyse the relationship between the distance of planets from the sun and their mean surface temperature.
 [BubbleChart data: planetsinfo width: 500 height: 600/]
+
+[i] The anamoly here is that despite being closest to the sun, Mercury isn't the hottest planet in our solar system[/i]
+[/section]
 [data name:"example" source:"example-data.json"/]
-[LineChart data:example width:1000 height:300/]
+
+**Next, How do the planets compare to one another in terms of their size?**
+Go ahead and toggle between a circle packed treemap and a heatmap!
 [TreeMap /]
+
+[i]While it must be tempting to make a general assumption that the outer planets will always be bigger than the inner planets,
+ this is not the case with every other solar system. It is only by coincidence that our solar system has smaller inner planets and larger outer planets.
+ There are some solar systems in which the closest planet to the star is known to be as big as our jupiter.[/i]
+
+**Interactive Timeline of Interplanetary Space Exploration:**
 [Timeline /]
-Here is how you can use a variable:
+**How to read?**
+[i]
+This is Sankey chart with planets nodes in the left axis and the years since the first satelite was launched until today in the right axis.
+The links connecting the nodes of the axes are the space missions carried out by NASA and other space agencies. This is a simple timeline
+listing the launch year of the space crafts and their destinations for every mission (both failure and success) so far in history.
+In the future, I plan to include another visual metric "weight" for the links that determine their width (strokewidth) based on the budgets of each mission. [/i]
+[/section]
 
-[var name:"exampleVar" value:5 /]
+[section]
+**Conclusion**
+I intentionally kept the visualizations simple as my targeted audience includes all those interrested in knowing about our solar system regardless of their
+age and educational background. Instead, a lot of my effort went in learning the tools and technologies needed to build this page. I coded everything in
+this interactive webpage including all its visualizations.
+[/section]
 
-[Range min:0 max:10 value:exampleVar /]
-[Display value:exampleVar /]
+[section]
 
-```
-[var name:"exampleVar" value:5 /]
+**About this page**
 
-[Range min:0 max:10 value:exampleVar /]
-[Display value:exampleVar /]
-```
+This page was built using [Idyll](https://idyll-lang.org), a markup language for interactive documents.
+The charts were developed using [ReactVis](https://github.com/uber/react-vis) components.
+This project is for the INST760 Data Visualization class at the [University of Maryland College Park](https://umd/edu).
 
-And here is a custom component:
-
-[CustomComponent /]
-
-You can use standard html tags if a
-component with the same name
-doesn't exist.
-
-* *markdown* syntax is supported.
-
-
-You can also load files from your `static/` directory.
-[img
-  src:'static/images/quill.svg'
-  style:`{ width: 75, display: 'block', margin: '30px auto' }`
-  /]
-
-[Fixed]
-
-[var name:"state" value:0 /]
-
-This component is implemented using D3:
-
-[CustomD3Component className:"d3-component" state:state /]
-[button onClick:`state++`]
-  Click Me.
-[/button]
-
-[/Fixed]
+[/section]
