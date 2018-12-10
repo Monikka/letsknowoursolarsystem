@@ -1,12 +1,10 @@
 [meta title:"Our Solar System" description:"Short description of your project" /]
 
-[fixed]
 [Header
   title:"Our Solar System"
   subtitle:"Facts, Figures & Comparisons!"
   author:"Monikka Ravichandran"
   authorLink:"http://monikka.github.io" /]
-[/fixed]
 
 [section className:"article-body"]
 This project was motivated by my 5-year old niece, who likes to read a lot
