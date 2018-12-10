@@ -1,15 +1,17 @@
 [meta title:"Our Solar System" description:"Short description of your project" /]
 
+[fixed]
 [Header
   title:"Our Solar System"
   subtitle:"Facts, Figures & Comparisons!"
   author:"Monikka Ravichandran"
   authorLink:"http://monikka.github.io" /]
+[/fixed]
 
 [section className:"article-body"]
 This project was motivated by my 5-year old niece, who likes to read a lot
  (or make us read to her). Her recent obsession is a national geography kids book on "planets".
- It wasn't until she questioned about th planets, that I realised how much we don't know about the solar system we live
+ It wasn't until she questioned about the planets, that I realised how much we don't know about the solar system we live
  in and her questioning on how we know the facts about planets led me to learn about the space missions carried out 
  by various space agencies so far. When googling for a timeline of such events, I found out that most infographics
  or images that exist are text-only, aren't readable, hard to understand and does not contain recent events.
@@ -53,15 +55,15 @@ In the future, I plan to include another visual metric "weight" for the links th
 [/section]
 
 [section]
-**Conclusion**
-I intentionally kept the visualizations simple as my targeted audience includes all those interrested in knowing about our solar system regardless of their
+**Conclusion:**
+I intentionally kept the visualizations simple as my targeted audience includes all those interested in knowing about our solar system regardless of their
 age and educational background. Instead, a lot of my effort went in learning the tools and technologies needed to build this page. I coded everything in
 this interactive webpage including all its visualizations.
 [/section]
 
 [section]
 
-**About this page**
+**About this page"**
 
 This page was built using [Idyll](https://idyll-lang.org), a markup language for interactive documents.
 The charts were developed using [ReactVis](https://github.com/uber/react-vis) components.
